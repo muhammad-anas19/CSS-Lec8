@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=.container, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: red;
+            border: 5px solid black;
+            margin: 2px;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            height: 800px;
+            /* ab flex direction row hai tou main axis horizontal hoga */
+            justify-content: start; 
+            /* ab mene justify content center kia tou horizontaly center me aagya */
+
+            align-items: start;
+
+            /* ab jab ham screen squeeze karrahe hain tou 2box start me hain phir ek wide space hai phir 2box, tou agar ham chhate hain k ye space na ho tou iske liye haim align-content property ka use karengy */
+
+            align-content: start;
+        }
+        .box {
+            /* height: 200px;
+            width: 200px; */
+            border: 2px solid darkblue;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #box1 {
+            background-color: aqua;
+            /* order: 500; */
+            /* flex-shrink: 4; */
+            align-self: center;
+        }
+        #box2 {
+            background-color: yellowgreen;
+        }
+        #box3 {
+            background-color: pink;
+        }
+        #box4 {
+            background-color: slategray;
+            /* flex-basis: 400px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>
